@@ -8,7 +8,7 @@ Algoritmo InteresCompuesto
   Imprimir ("Introduzca cuantos años tomo." ;
   Leer t;
   
-  IC = (P*(1+R)**T);
+  IC = (P*(1+r)**t);
   
   Imprimir ("Su interes compuesto es:", IC);
 
