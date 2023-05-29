@@ -5,6 +5,8 @@ Algoritmo MayorMenor
   Para (c = 1; c <= 10; c++) // Para 10 veces.
   { Imprimir ("Escriba un numero");
     Leer nu;
+    ma= n
+    me= n
      Si (nu > ma) Entonces
         { ma = nu;  
      Si (nu < me) Entonces
