@@ -1,0 +1,68 @@
+Algoritmo PiedraPapelTijera
+{ //Variables
+  Enteros p1, p2, p3, op1, op2, op3, ronda,
+          pt1 = 0, pt2 = 0, pt3 = 0;
+  
+  Para (ronda = 1; ronda <= 3; ronda++);
+  { Imprimir ("=== Ronda", ronda, "===");
+  
+    Imprimir ("Turno de participante 1:");
+    Imprimir ("Escriba una opcion ( 1) Piedra, 2) Papel, 3) Tijera ):");
+    Leer op1;
+
+    Imprimir ("Turno de participante 2:");
+    Imprimir ("Escriba una opcion ( 1) Piedra, 2) Papel, 3) Tijera ):");
+    Leer op2;
+   
+    Imprimir ("Turno de participante 3:");
+    Imprimir ("Escriba una opcion ( 1) Piedra, 2) Papel, 3) Tijera ):");
+    Leer op3;
+    
+    Si (op1 == op2 && op2 == op3) Entonces
+    { Imprimir ("Empate en ronda:", ronda);
+      } Sino
+          Si (op == 1 && op2 == 3) || (op1 == 2 && op2 == 1) || (op1 == 3 && op2 == 2) Entonces
+          { Imprimir ("El participante 1 gano la ronda:", ronda);
+            pt1 = (pt1 + 1);
+          } Sino
+              Si (op2 == 1 && op3 == 3) || (op2 == 2 && op3 == 1) || (op2 == 3 && op3 == 2) Entonces
+              { Imprimir ("El participante 2 gano la ronda:", ronda);
+                 pt2 = (pt2 + 1);
+               } Sino
+                   Si (op3 == 3 && op1 == 1) || (op3 == 1 && op1 == 2) || (op3 == 2 && op1 == 3) || (op1 == 2 && op2 == 2) Entonces
+                   { Imprimir ("El participante 3 gano la ronda:", ronda);
+                     pt3 = (pt2 + 1);
+                   } Sino
+                      Si (op1 > 3 || op1 < 1) || (op2 > 3 || op2 < 1) || (op3 > 3 || op3 < 1) Entonces
+                      { Imprimir ("Valores invalidos, ronda invalida.")}
+  } // Fin Para
+
+  Imprimir ("=== Resultados ===");
+  Imprimir ("Puntuacion del Participante 1:", pt1);
+  Imprimir ("Puntuacion del Participante 2:", pt2);
+  Imprimir ("Puntuacion del Participante 3:", pt3);
+  
+  Si (pt == pt2 && pt2 == pt3) Entonces
+  { Imprimir ("Los participantes empataron");
+  } Sino
+      Si (pt1 > pt2 && pt1 > pt3) Entonces
+      { Imprimir ("Gano el participante 1");
+      } Sino
+          Si (pt 2 > pt1 && pt2 > pt3) Entonces
+          { Imprimir ("Gano el participante 2");
+          } Sino
+              {Imprimir ("Gano el participante 3");}
+ 
+
+}  // Fin de Algoritmo
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
