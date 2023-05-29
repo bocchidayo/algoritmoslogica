@@ -1,0 +1,22 @@
+Algoritmo MayorMenor
+{ //Variables
+  Entero ma = 0, me = 0, nu, c;
+  
+  Para (c = 1; c <= 10; c++) // Para 10 veces.
+  { Imprimir ("Escriba un numero");
+    Leer nu;
+    Si (c == 1) Entonces
+      { ma = nu;
+        me = nu;  }
+    Sino
+      { Si (nu > ma) Entonces
+        { ma = nu;  }
+        Si (nu < me) Entonces
+        { me = nu;  }
+      } // Fin Sino
+  } // Fin Para
+  
+  Imprimir ("El numero mayor es:", ma);
+  Imprimir ("El numero menor es:", me);
+
+} // Fin Algoritmo
