@@ -1,0 +1,15 @@
+Algoritmo InteresCompuesto
+{ //Variables
+  Enteros t ;
+  Flotante  IC, P, r=0.06 ;
+  
+  Imprimir ("Introduzca cuanto dinero se invirtio.")  ;
+  Leer P;
+  Imprimir ("Introduzca cuantos años tomo." ;
+  Leer t;
+  
+  (IC = (P*(1+R)**T))
+  
+  Imprimir ("Su interes compuesto es:", IC);
+
+} //Fin Algoritmo
