@@ -7,13 +7,12 @@ Algoritmo MayorMenor
     Leer nu;
     Si (c == 1) Entonces
       { ma = nu;
-        me = nu;  }
-    Sino
-      { Si (nu > ma) Entonces
-        { ma = nu;  }
-        Si (nu < me) Entonces
-        { me = nu;  }
-      } // Fin Sino
+        me = nu;
+      } Sino
+          Si (nu > ma) Entonces
+            { ma = nu;  }
+          Si (nu < me) Entonces
+            { me = nu;  }
   } // Fin Para
   
   Imprimir ("El numero mayor es:", ma);
