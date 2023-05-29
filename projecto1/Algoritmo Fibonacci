@@ -1,25 +1,25 @@
 Algoritmo Fibonacci
 [ //Definir variables
-Entero en, nI,n2, sn, Pi
-Entero contador;
-Escribir {"Ingrese el numero con el que desea iniciar:”);
-leer (f);
-Escribir (" introduzca la cantidad de numeras que desea mostrar:");
-Leer (cn);
-Si (cn<= 0)entonces
-{ Escribir (“la cantidad de números debe ser mayor a 0”);
-}sino {
-n1=0
-n2=f
-Escribir (“Los números de la serie Fibonacci son”);
-contador = -1
-Mientras (contador <= cn)
-{
-escribir (n1);
-sn=n1+n2
-n1=n2
-n2=sn
-contador= contador + 1
-}// fin Mientras
-} //Finsino
+  Entero en, nI,n2, sn, Pi
+  Entero contador;
+  Escribir {"Ingrese el numero con el que desea iniciar:”);
+  leer (f);
+  Escribir (" introduzca la cantidad de numeras que desea mostrar:");
+  Leer (cn);
+  Si (cn<= 0)entonces
+  { Escribir (“la cantidad de números debe ser mayor a 0”);
+  }sino 
+    { n1=0
+      n2=f
+      Escribir (“Los números de la serie Fibonacci son”);
+      contador = -1
+      Mientras (contador <= cn)
+        {
+        escribir (n1);
+        sn=n1+n2
+        n1=n2
+        n2=sn
+        contador= contador + 1
+        }// fin Mientras
+     } //Finsino
 } fin Algoritmo
