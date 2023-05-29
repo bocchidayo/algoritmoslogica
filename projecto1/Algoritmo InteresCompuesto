@@ -1,12 +1,12 @@
 Algoritmo InteresCompuesto
 { //Variables
-  Enteros t ;
-  Flotante  IC, P, r=0.06 ;
+  Enteros t=349, P=24 ;
+  Flotante  IC, r=0.06 ;
   
-  Imprimir ("Introduzca cuanto dinero se invirtio.")  ;
-  Leer P;
-  Imprimir ("Introduzca cuantos años tomo." ;
-  Leer t;
+  // Imprimir ("Introduzca cuanto dinero se invirtio.")  ;
+  // Leer P;
+  // Imprimir ("Introduzca cuantos años tomo." ;
+  // Leer t;
   
   IC = (P*(1+r)**t);
   
